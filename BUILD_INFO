@@ -1,0 +1,364 @@
+{
+    "attempt_id": 1,
+    "best_target_priority": 1,
+    "bid": "16997670",
+    "branch": "git_main-mingw",
+    "branch_priority": 1,
+    "build_configs": {},
+    "build_type": "submitted",
+    "device_dir": "/mnt/disks/build-disk/src/googleplex-android/main-mingw",
+    "docker_image": "us-docker.pkg.dev/android-build-fleet-docker/android-build-docker-2404/buildbot-docker-image-2404@sha256:fa18c78d3fb21c25313f2d748195b3fbfbee9829e110d99cefca2b06cbaf237e",
+    "enable_docker": true,
+    "git-pull": null,
+    "git-server": "https://googleplex-android.googlesource.com",
+    "hostname": "r-a3bcaa7555d6ab21-hsdx",
+    "inc-build": false,
+    "java-version": "",
+    "last_logfile": null,
+    "out_dir": "/mnt/disks/build-disk/src/googleplex-android/main-mingw/out",
+    "parsed_manifest": {
+        "manifestServer": {},
+        "parsedDefault": {
+            "remote": "goog",
+            "revision": "main"
+        },
+        "projects": [
+            {
+                "cloneDepth": "1",
+                "name": "platform/prebuilts/build-tools",
+                "path": "prebuilts/build-tools",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "2ac40160e3246d7cb49a7616688c7e39b13b764d"
+            },
+            {
+                "cloneDepth": "1",
+                "name": "platform/prebuilts/clang/host/linux-x86",
+                "path": "prebuilts/clang/host/linux-x86",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "7daac48b505331bd036ccb36f84fafb418f3b5ec"
+            },
+            {
+                "group": [
+                    "pdk",
+                    "linux"
+                ],
+                "name": "platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+                "path": "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "d9aafaade740ca38612c742f6d87debf362132ea"
+            },
+            {
+                "cloneDepth": "1",
+                "name": "platform/prebuilts/mingw",
+                "path": "prebuilts/mingw",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "e4a3705ba97407f368e3b75b76d56b872f04a8af"
+            },
+            {
+                "cloneDepth": "1",
+                "name": "platform/prebuilts/python/linux-x86",
+                "path": "prebuilts/python/linux-x86",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "30c044d4cb071e55e5e3298bab1cfc22f14a6a62"
+            },
+            {
+                "name": "toolchain/binutils",
+                "path": "toolchain/binutils",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "d8e66b9c85165349b535e0eac37838c7e0dba97c"
+            },
+            {
+                "name": "toolchain/cloog",
+                "path": "toolchain/cloog",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "4263d905a9cd72610c80cce40b6ce8619a848621"
+            },
+            {
+                "name": "toolchain/gcc",
+                "path": "toolchain/gcc",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "1e500338dbd3f4983f9075332fed7599ac020f5e"
+            },
+            {
+                "name": "toolchain/gmp",
+                "path": "toolchain/gmp",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "4ce4cb08bcddf6ac26974d3ea56c15b7adca68fe"
+            },
+            {
+                "name": "toolchain/isl",
+                "path": "toolchain/isl",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "33c78bf104e1d61754b3f1be5b2cb835d4dbcc8b"
+            },
+            {
+                "name": "toolchain/mingw",
+                "path": "toolchain/mingw",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "062c5f85ac509670b06a47b19a2e61553e0bcd37"
+            },
+            {
+                "name": "toolchain/mpc",
+                "path": "toolchain/mpc",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "2ad7980ede3ce768fc596752f5c63acc542f0507"
+            },
+            {
+                "name": "toolchain/mpfr",
+                "path": "toolchain/mpfr",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "1180945d2e0947eacc364f362fe90597db4bb962"
+            },
+            {
+                "name": "toolchain/ppl",
+                "path": "toolchain/ppl",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/",
+                    "name": "goog",
+                    "review": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "72a2c0f8bce44b0b59138054930cd8ed595e1ec9"
+            },
+            {
+                "name": "platform/manifest",
+                "path": "platform/manifest",
+                "remote": {
+                    "fetch": "https://googleplex-android.googlesource.com/"
+                },
+                "revision": "aaa37a9f328e8e3b84102130fd56c14bb62d9ef6"
+            }
+        ],
+        "remote": [
+            {
+                "fetch": "https://googleplex-android.googlesource.com/",
+                "name": "goog",
+                "review": "https://googleplex-android.googlesource.com/"
+            }
+        ],
+        "superproject": {
+            "name": "platform/superproject/main-mingw",
+            "remote": {
+                "fetch": "https://googleplex-android.googlesource.com/",
+                "name": "goog",
+                "review": "https://googleplex-android.googlesource.com/"
+            },
+            "revision": "20fd778ce2f340083eb123c2dee3b2af55209ad4"
+        }
+    },
+    "platform": "linux",
+    "proof_build": false,
+    "repo-dict": {
+        "platform/manifest": "aaa37a9f328e8e3b84102130fd56c14bb62d9ef6",
+        "platform/prebuilts/build-tools": "2ac40160e3246d7cb49a7616688c7e39b13b764d",
+        "platform/prebuilts/clang/host/linux-x86": "7daac48b505331bd036ccb36f84fafb418f3b5ec",
+        "platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8": "d9aafaade740ca38612c742f6d87debf362132ea",
+        "platform/prebuilts/mingw": "e4a3705ba97407f368e3b75b76d56b872f04a8af",
+        "platform/prebuilts/python/linux-x86": "30c044d4cb071e55e5e3298bab1cfc22f14a6a62",
+        "toolchain/binutils": "d8e66b9c85165349b535e0eac37838c7e0dba97c",
+        "toolchain/cloog": "4263d905a9cd72610c80cce40b6ce8619a848621",
+        "toolchain/gcc": "1e500338dbd3f4983f9075332fed7599ac020f5e",
+        "toolchain/gmp": "4ce4cb08bcddf6ac26974d3ea56c15b7adca68fe",
+        "toolchain/isl": "33c78bf104e1d61754b3f1be5b2cb835d4dbcc8b",
+        "toolchain/mingw": "062c5f85ac509670b06a47b19a2e61553e0bcd37",
+        "toolchain/mpc": "2ad7980ede3ce768fc596752f5c63acc542f0507",
+        "toolchain/mpfr": "1180945d2e0947eacc364f362fe90597db4bb962",
+        "toolchain/ppl": "72a2c0f8bce44b0b59138054930cd8ed595e1ec9"
+    },
+    "repo-init-branch": "main-mingw",
+    "repo-manifest": "platform/manifest",
+    "repo_manifest_file": "default.xml",
+    "reset_image_build": false,
+    "src_ctrl": "repo",
+    "sync_finish_time": 1795210850.187118,
+    "sync_start_time": 1795210843.154786,
+    "sync_succeed": 1,
+    "target": {
+        "apiary_target": "mingw",
+        "dir_list": [
+            "applied.prop",
+            "repo.prop",
+            "manifest_16997670.xml",
+            "mingw.tar.xz",
+            "multiple.intoto.jsonl",
+            "logs/init_build_config.textproto",
+            "logs/execute_build_config.textproto",
+            "logs/buildbot_trace.trace",
+            "logs/git_metrics.textproto",
+            "logs/build_tee_error.log",
+            "logs/STARTED",
+            "logs/SUCCEEDED",
+            "logs/git.log",
+            "logs/execute_build_result.textproto",
+            "logs/git_thread.log",
+            "logs/build.log",
+            "logs/resource_utilization/cpu_time.log",
+            "logs/resource_utilization/memory_usage.log",
+            "logs/resource_utilization/memory_usage.json",
+            "logs/resource_utilization/disk_usage.log",
+            "logs/resource_utilization/cpu_time.json",
+            "logs/resource_utilization/disk_usage.json",
+            "logs/resource_utilization/cpu_usage.log",
+            "logs/resource_utilization/cpu_usage.json",
+            "BUILD_INFO"
+        ],
+        "dist-dir": "/buildbot/dist_dirs/git_main-mingw-linux-mingw/16997670",
+        "name": "mingw",
+        "rules": [
+            [
+                "DIST_DIR=%dist_dir% OUT_DIR=out prebuilts/python/linux-x86/bin/python3 toolchain/mingw/android/build.py",
+                "build.log",
+                true,
+                false
+            ]
+        ],
+        "storage_path": "/bigstore/android-build/builds/git_main-mingw-linux-mingw/16997670/bf6bbba8a490cdbf987d6b7a57556b1d064a0381f383df79f9df83ef60b0fd24/1",
+        "target_finish_time": 1795210882.5035365,
+        "target_start_time": 1795210851.373255,
+        "target_status": 1
+    },
+    "trident_usage": {
+        "external_disk_no_space": false,
+        "trident_used": false
+    },
+    "use_goma": false,
+    "worknode": {
+        "containerId": "L07700030233596254",
+        "creationTimeMillis": "1795210707750",
+        "currentAttempt": {
+            "attemptId": "6Rn9SEgU9V3IZOpjw6a55g==",
+            "progressMessages": [
+                {
+                    "displayMessage": "Build 16997670 for node L07700030233596254:N17000031348769075 has been inserted",
+                    "messageString": "Build 16997670 for node L07700030233596254:N17000031348769075 has been inserted",
+                    "timeMillis": "1795210714820"
+                }
+            ],
+            "startTimeMillis": "1795210708417"
+        },
+        "heartbeatTimeMillis": "43200000",
+        "id": "L07700030233596254:N17000031348769075",
+        "inputEdges": [
+            {
+                "neighborId": "L07700030233596254:N77500031348769072"
+            }
+        ],
+        "isFinal": false,
+        "lastUpdatedMillis": "1795210830917",
+        "nodeClass": "postsubmit",
+        "retryStatus": {
+            "maximumRetries": 4,
+            "retryCount": 0
+        },
+        "revision": "/tz6m9J8RP0IGzWnbmjmyQ==",
+        "status": "scheduled",
+        "statusHistory": [
+            {
+                "status": "CREATED",
+                "timestampMillis": "1795210707750"
+            },
+            {
+                "status": "PENDING",
+                "timestampMillis": "1795210708067"
+            },
+            {
+                "status": "SCHEDULED",
+                "timestampMillis": "1795210708417"
+            }
+        ],
+        "workExecutorType": "submittedBuild",
+        "workParameters": {
+            "submittedBuild": {
+                "branch": "git_main-mingw",
+                "branchConfig": {
+                    "sloTier": "BEST_EFFORT"
+                },
+                "buildId": "16997670",
+                "gerritPollerTimestamp": "1795210652966",
+                "manuallyTriggered": false,
+                "syncTimeoutSecond": 2700,
+                "target": {
+                    "buildCommand": [
+                        "DIST_DIR=%dist_dir% OUT_DIR=out prebuilts/python/linux-x86/bin/python3 toolchain/mingw/android/build.py"
+                    ],
+                    "buildPlatform": "linux",
+                    "disabled": false,
+                    "dockerInfo": {
+                        "dockerRepo": "us-docker.pkg.dev/android-build-fleet-docker/android-build-docker-2404/buildbot-docker-image-2404",
+                        "tag": "prod"
+                    },
+                    "enableReleaseBuildChaining": false,
+                    "flashstation": {
+                        "enabled": true
+                    },
+                    "incrementalBuild": false,
+                    "launchcontrolName": "mingw",
+                    "name": "mingw",
+                    "platformVersion": "docker",
+                    "priority": "LOW",
+                    "product": "mingw",
+                    "provenanceInfo": {
+                        "bbcpDepotContextCl": 1026666356,
+                        "bbcpFileApiPath": "/google_built/overlay/latest/busytown/google3/wireless/android/launchcontrol/config/branch_config.asciipb",
+                        "branchConfigPath": "google3/wireless/android/launchcontrol/config/branch_config.asciipb"
+                    },
+                    "rbeSupported": true,
+                    "releaseBranch": false,
+                    "target": "mingw"
+                }
+            }
+        },
+        "workerId": "buildassembler_buildnotifier_workers"
+    }
+}
