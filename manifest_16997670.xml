@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<manifest>
+  <remote name="goog" fetch="https://googleplex-android.googlesource.com/" review="https://googleplex-android.googlesource.com/" />
+
+  <default revision="main" remote="goog" />
+
+  <superproject name="platform/superproject/main-mingw" remote="goog" revision="main-mingw" />
+
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="2ac40160e3246d7cb49a7616688c7e39b13b764d" />
+
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="7daac48b505331bd036ccb36f84fafb418f3b5ec" />
+
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" revision="d9aafaade740ca38612c742f6d87debf362132ea" />
+
+  <project path="prebuilts/mingw" name="platform/prebuilts/mingw" clone-depth="1" revision="e4a3705ba97407f368e3b75b76d56b872f04a8af" />
+
+  <project path="prebuilts/python/linux-x86" name="platform/prebuilts/python/linux-x86" clone-depth="1" revision="30c044d4cb071e55e5e3298bab1cfc22f14a6a62" />
+
+  <project path="toolchain/binutils" name="toolchain/binutils" revision="d8e66b9c85165349b535e0eac37838c7e0dba97c" />
+
+  <project path="toolchain/cloog" name="toolchain/cloog" revision="4263d905a9cd72610c80cce40b6ce8619a848621" />
+
+  <project path="toolchain/gcc" name="toolchain/gcc" revision="1e500338dbd3f4983f9075332fed7599ac020f5e" />
+
+  <project path="toolchain/gmp" name="toolchain/gmp" revision="4ce4cb08bcddf6ac26974d3ea56c15b7adca68fe" />
+
+  <project path="toolchain/isl" name="toolchain/isl" revision="33c78bf104e1d61754b3f1be5b2cb835d4dbcc8b" />
+
+  <project path="toolchain/mingw" name="toolchain/mingw" revision="062c5f85ac509670b06a47b19a2e61553e0bcd37" />
+
+  <project path="toolchain/mpc" name="toolchain/mpc" revision="2ad7980ede3ce768fc596752f5c63acc542f0507" />
+
+  <project path="toolchain/mpfr" name="toolchain/mpfr" revision="1180945d2e0947eacc364f362fe90597db4bb962" />
+
+  <project path="toolchain/ppl" name="toolchain/ppl" revision="72a2c0f8bce44b0b59138054930cd8ed595e1ec9" />
+</manifest>
