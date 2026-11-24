@@ -1,0 +1,20 @@
+name: "mingw-w64"
+description:
+    "Prebuilt MinGW-w64 headers, CRT, import libraries, and winpthreads built "
+    "from toolchain/mingw for cross-compiling Windows host binaries with Clang."
+
+third_party {
+  homepage: "https://www.mingw-w64.org/"
+  identifier {
+    type: "Git"
+    value: "https://git.code.sf.net/p/mingw-w64/mingw-w64"
+    primary_source: true
+  }
+  # The shipped runtime libraries (mingw-w64-crt, excluding the unused gprof
+  # runtime in mingw-w64-crt/profile/, and winpthreads) are ZPL 2.1, MIT, BSD,
+  # ISC, and public domain, so statically linking them into Windows binaries
+  # does not trigger copyleft obligations. We mark this repository RESTRICTED
+  # because the sysroot headers include Wine-derived DirectX/DDK headers
+  # (LGPL-2.1+).
+  license_type: RESTRICTED
+}

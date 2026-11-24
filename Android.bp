@@ -1,0 +1,65 @@
+//
+// Copyright (C) 2026 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+package {
+    default_applicable_licenses: ["prebuilts_mingw_license"],
+}
+
+// See: http://go/android-license-faq
+license {
+    name: "prebuilts_mingw_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+        "SPDX-license-identifier-BSD",
+        "SPDX-license-identifier-ISC",
+        "SPDX-license-identifier-LGPL-2.1-or-later",
+        "SPDX-license-identifier-MIT",
+        "SPDX-license-identifier-ZPL-2.1",
+        "legacy_unencumbered",
+    ],
+    license_text: ["NOTICE"],
+}
+
+license {
+    name: "prebuilts_mingw_winpthreads_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-BSD",
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: ["WINPTHREADS_LICENSE"],
+}
+
+cc_prebuilt_library_static {
+    name: "libwinpthread_mingw",
+    host_supported: true,
+    device_supported: false,
+    enabled: false,
+    target: {
+        windows: {
+            enabled: true,
+        },
+        windows_x86: {
+            srcs: ["i686-w64-mingw32/lib/libwinpthread.a"],
+        },
+        windows_x86_64: {
+            srcs: ["x86_64-w64-mingw32/lib/libwinpthread.a"],
+        },
+    },
+    stl: "none",
+    licenses: ["prebuilts_mingw_winpthreads_license"],
+}
